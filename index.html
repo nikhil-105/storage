@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question-title {
+            font-weight: bold;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h1>Budget 2024 Questionnaire</h1>
+            <form id="quizForm">
+                <div class="question">
+                    <div class="question-title">1. What is the new income tax rate for individuals earning between ₹7-10 lakh annually as per Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q1" value="a"> a) 5%</li>
+                        <li><input type="radio" name="q1" value="b"> b) 10%</li>
+                        <li><input type="radio" name="q1" value="c"> c) 15%</li>
+                        <li><input type="radio" name="q1" value="d"> d) 30%</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <div class="question-title">2. What is the projected fiscal deficit for FY25 as per Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q2" value="a"> a) 3.9% of GDP</li>
+                        <li><input type="radio" name="q2" value="b"> b) 4.5% of GDP</li>
+                        <li><input type="radio" name="q2" value="c"> c) 4.9% of GDP</li>
+                        <li><input type="radio" name="q2" value="d"> d) 5.1% of GDP</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <div class="question-title">3. How much has been allocated to the agriculture sector in Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q3" value="a"> a) ₹1.52 lakh crore</li>
+                        <li><input type="radio" name="q3" value="b"> b) ₹2.66 lakh crore</li>
+                        <li><input type="radio" name="q3" value="c"> c) ₹1.48 lakh crore</li>
+                        <li><input type="radio" name="q3" value="d"> d) ₹1.82 lakh crore</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <div class="question-title">4. How many youth are expected to receive job opportunities with the ₹2 lakh crore allocation in Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q4" value="a"> a) 1.1 crore</li>
+                        <li><input type="radio" name="q4" value="b"> b) 2.1 crore</li>
+                        <li><input type="radio" name="q4" value="c"> c) 3.1 crore</li>
+                        <li><input type="radio" name="q4" value="d"> d) 4.1 crore</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <div class="question-title">5. What is the allocation for rural development in Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q5" value="a"> a) ₹1.52 lakh crore</li>
+                        <li><input type="radio" name="q5" value="b"> b) ₹2.66 lakh crore</li>
+                        <li><input type="radio" name="q5" value="c"> c) ₹3.21 lakh crore</li>
+                        <li><input type="radio" name="q5" value="d"> d) ₹1.48 lakh crore</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <div class="question-title">6. What is the new Mudra loan limit for MSMEs as per Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q6" value="a"> a) ₹10 lakh</li>
+                        <li><input type="radio" name="q6" value="b"> b) ₹15 lakh</li>
+                        <li><input type="radio" name="q6" value="c"> c) ₹20 lakh</li>
+                        <li><input type="radio" name="q6" value="d"> d) ₹25 lakh</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <div class="question-title">7. Which sector received the highest allocation in Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q7" value="a"> a) Education</li>
+                        <li><input type="radio" name="q7" value="b"> b) Defence</li>
+                        <li><input type="radio" name="q7" value="c"> c) Healthcare</li>
+                        <li><input type="radio" name="q7" value="d"> d) Infrastructure</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <div class="question-title">8. What is the new tax rate on short-term capital gains for certain financial assets as per Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q8" value="a"> a) 10%</li>
+                        <li><input type="radio" name="q8" value="b"> b) 15%</li>
+                        <li><input type="radio" name="q8" value="c"> c) 20%</li>
+                        <li><input type="radio" name="q8" value="d"> d) 25%</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <div class="question-title">9. How much has been allocated for the development of renewable energy in Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q9" value="a"> a) ₹10,100 crore</li>
+                        <li><input type="radio" name="q9" value="b"> b) ₹15,200 crore</li>
+                        <li><input type="radio" name="q9" value="c"> c) ₹19,100 crore</li>
+                        <li><input type="radio" name="q9" value="d"> d) ₹20,000 crore</li>
+                    </ul>
+                </div>
+                <div class="question">
+                    <div class="question-title">10. What is the main objective of the PM Surya Ghar Muft Bijlee Yojana mentioned in Budget 2024?</div>
+                    <ul class="options">
+                        <li><input type="radio" name="q10" value="a"> a) Provide free healthcare</li>
+                        <li><input type="radio" name="q10" value="b"> b) Offer 300 units of free power monthly</li>
+                        <li><input type="radio" name="q10" value="c"> c) Subsidize agricultural equipment</li>
+                        <li><input type="radio" name="q10" value="d"> d) Support education for underprivileged children</li>
+                    </ul>
+                </div>
+                <button type="button" onclick="submitQuiz()">Submit</button>
+            </form>
+    
+    <script>
+        const correctAnswers = ['b', 'c', 'a', 'd', 'b', 'c', 'b', 'b', 'c', 'b'];
+
+        function submitQuiz() {
+            const form = document.getElementById('quizForm');
+            let correctCount = 0;
+            let wrongCount = 0;
+
+            correctAnswers.forEach((answer, index) => {
+                const questionName = `q${index + 1}`;
+                const selectedOption = form[questionName].value;
+
+                if (selectedOption === answer) {
+                    correctCount++;
+                } else {
+                    wrongCount++;
+                }
+            });
+
+            localStorage.setItem('correctCount', correctCount);
+            localStorage.setItem('wrongCount', wrongCount);
+
+            // Redirect to results.html
+            window.location.href = 'results.html';
+            return false; // Prevent the default form submission
+        }
+    </script>
+</body>
+</html>
+
